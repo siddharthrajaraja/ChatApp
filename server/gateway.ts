@@ -4,6 +4,7 @@ import checkConnRouter from './routes/connection/checkConn';
 import registerRouter from './routes/register/register'
 
 export function gateway(app : Express){
-    app.use((new Constants.RoutingConstants).WEB_API,checkConnRouter);
-    app.use((new Constants.RoutingConstants).WEB_API,registerRouter)
+    const routingConstants = new Constants.RoutingConstants();
+    app.use(routingConstants.WEB_API,checkConnRouter);
+    app.use(routingConstants.WEB_API,registerRouter)
 }
