@@ -1,11 +1,13 @@
 {
-    "compilerOptions": {
-      "target": "es6",
-      "module": "commonjs",
-      "rootDir": "./",
-      "outDir": "./build",
-      "esModuleInterop": true,
-      "strict": true
-    },
-    "include": ["server/"]
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "rootDir": "./",
+    "outDir": "./build",
+    "esModuleInterop": true,
+    "strict": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+  },
+  "include": ["server/","auto/","database/config","Exceptions/","middlewares/"]
 }

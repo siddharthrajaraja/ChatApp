@@ -1,9 +1,10 @@
-import {UsersModel} from '../../../model/users/usersModel'
 import express from 'express'
 import responseCode from '../../../Exceptions/responseCode'
 import responseMessage from '../../../Exceptions/responseMessage'
-exports.register=(req : express.Request,res : express.Response)=>{
-    console.log(req.body)
-    const user = new UsersModel.Users(req.body.username,req.body.password,req.body.email);
+import User from '../../../types/users'
+import registerUser from '../../../database/queries/registerQuery'
+exports.register=async(req : express.Request,res : express.Response)=>{
+    let userObj : User = req.body;
+    await registerUser(userObj)
     res.status(responseCode.SUCCESS).send(responseMessage.SUCCESS)
 }

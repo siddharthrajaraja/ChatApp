@@ -1,7 +1,8 @@
+import 'reflect-metadata';
 import bodyParser from "body-parser"
 import express from 'express'
 import {gateway} from './gateway'
-import '../config/dbConnections/psql.spec'
+import '../database/config/dbConnections/psql.spec'
 const app= express()
 const dotenv = require('dotenv').config()
 const jsonParser = bodyParser.json()
