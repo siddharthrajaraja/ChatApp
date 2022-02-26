@@ -2,7 +2,7 @@ import { Router } from "express";
 import { Constants } from "../../../constants/Constants";
 const bodyParser = require("body-parser");
 const routingConstants = new Constants.RoutingConstants();
-const { register } = require("../../controller/register/register");
+import RegisterController from "../../controller/auth/register";
 const registerRouter = Router();
 const jsonParser = bodyParser.json();
 import validRegisterBody from "../../../middlewares/register/validRegisterBody";
@@ -12,6 +12,6 @@ registerRouter.post(
   jsonParser,
   validRegisterBody,
   userExists,
-  register
+  RegisterController
 );
 export = registerRouter;

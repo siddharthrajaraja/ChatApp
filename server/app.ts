@@ -4,7 +4,7 @@ import express from "express";
 import { gateway } from "./gateway";
 import "../database/config/dbConnections/psql.spec";
 const app = express();
-const dotenv = require("dotenv").config();
+const dotenv = require("dotenv");
 const jsonParser = bodyParser.json();
 
 gateway(app);
