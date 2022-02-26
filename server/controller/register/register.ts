@@ -6,5 +6,5 @@ import registerUser from "../../../database/queries/registerQuery";
 exports.register = async (req: express.Request, res: express.Response) => {
   let userObj: User = req.body;
   await registerUser(userObj);
-  res.status(responseCode.SUCCESS).send(responseMessage.SUCCESS);
+  res.status(responseCode.SUCCESS).send(responseMessage.USER_CREATED);
 };
