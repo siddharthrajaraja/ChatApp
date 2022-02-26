@@ -14,7 +14,7 @@ CREATE TABLE sample_tbl ( uname varchar(50) );
 
 CREATE TABLE user_tbls (
     username varchar(50) NOT NULL,
-    mobile varchar(11),
+    mobile bigint,
     email varchar(50),
     password varchar(100) NULL,
     PRIMARY KEY(mobile,email)

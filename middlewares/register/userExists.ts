@@ -14,6 +14,7 @@ export default async function userExists(
     if ((await userExistsQuery(user)) != null) throw new Error();
     next();
   } catch (error) {
+    console.debug(error);
     return res
       .status(responseCode.INTERNAL_SERVER_ERROR)
       .send(responseMessage.USER_EXISTS);

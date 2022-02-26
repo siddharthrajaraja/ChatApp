@@ -16,7 +16,8 @@ export default function validRegisterBody(
     if (
       req.body.email === undefined ||
       req.body.password === undefined ||
-      req.body.username === undefined
+      req.body.username === undefined ||
+      req.body.mobile === undefined
     ) {
       throw responseMessage.INVALID_BODY;
     }
