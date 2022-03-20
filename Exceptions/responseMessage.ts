@@ -7,4 +7,5 @@ export = {
   LOGGED_IN: "Logged In",
   NO_RECORDS_FOUND:
     "Sorry logged in details does not exist. Kindly Register 😄",
+  PASSWORD_MISMATCH: "PASSWORD MISMATCH",
 };
