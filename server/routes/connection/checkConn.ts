@@ -1,7 +1,9 @@
-import express, { Router } from "express"
-import {Constants} from '../../../constants/Constants'
-const checkConnRouter = express.Router()
+import express from "express";
+import { Constants } from "constants/Constants";
+import { checkConnection } from "server/controller/connection/checkConn";
+
+const checkConnRouter = express.Router();
 const routingConstants = new Constants.RoutingConstants();
-const {checkConnection} = require('../../controller/connection/checkConn')
-checkConnRouter.get(routingConstants.WebApiConnection,checkConnection)
-export = checkConnRouter
+
+checkConnRouter.get(routingConstants.WebApiConnection, checkConnection);
+export = checkConnRouter;
