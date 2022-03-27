@@ -8,6 +8,7 @@
     "strict": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "baseUrl": "./"
   },
   "include": ["server/","auto/","database/config","Exceptions/","middlewares/"]
 }
