@@ -1,8 +1,8 @@
 import { Response, Request, NextFunction } from "express";
-import responseCode from "../../Exceptions/responseCode";
-import responseMessage from "../../Exceptions/responseMessage";
-import userExistsQuery from "../../database/queries/userExistQuery";
-import User from "../../types/users";
+import responseCode from "Exceptions/responseCode";
+import responseMessage from "Exceptions/responseMessage";
+import userExistsQuery from "database/queries/userExistQuery";
+import User from "types/users";
 
 export default async function userExists(
   req: Request,

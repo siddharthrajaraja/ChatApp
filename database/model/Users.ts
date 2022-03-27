@@ -1,6 +1,6 @@
 import { Model } from "sequelize";
-import UserSchema from "../schema/Users";
-import sequelize from "../config/dbConnections/psql";
+import UserSchema from "database/schema/Users";
+import sequelize from "database/config/dbConnections/psql";
 
 class Users extends Model {}
 

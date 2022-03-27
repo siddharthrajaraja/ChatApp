@@ -1,7 +1,7 @@
 import { NextFunction, Request, Response } from "express";
-import User from "../../types/users";
-import responseCode from "../../Exceptions/responseCode";
-import responseMessage from "../../Exceptions/responseMessage";
+import User from "types/users";
+import responseCode from "Exceptions/responseCode";
+import responseMessage from "Exceptions/responseMessage";
 
 export default function validLoginBody(
   req: Request,

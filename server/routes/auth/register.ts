@@ -1,12 +1,14 @@
 import { Router } from "express";
-import { Constants } from "../../../constants/Constants";
+import { Constants } from "constants/Constants";
+import RegisterController from "server/controller/auth/register";
+import validRegisterBody from "middlewares/register/validRegisterBody";
+import userExists from "middlewares/register/userExists";
+
 const bodyParser = require("body-parser");
 const routingConstants = new Constants.RoutingConstants();
-import RegisterController from "../../controller/auth/register";
 const registerRouter = Router();
 const jsonParser = bodyParser.json();
-import validRegisterBody from "../../../middlewares/register/validRegisterBody";
-import userExists from "../../../middlewares/register/userExists";
+
 registerRouter.post(
   routingConstants.WebApiRegister,
   jsonParser,

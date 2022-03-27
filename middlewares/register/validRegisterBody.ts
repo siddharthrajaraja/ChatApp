@@ -1,7 +1,7 @@
 import { Response, Request, NextFunction } from "express";
 import md5 from "md5";
-import responseCode from "../../Exceptions/responseCode";
-import responseMessage from "../../Exceptions/responseMessage";
+import responseCode from "Exceptions/responseCode";
+import responseMessage from "Exceptions/responseMessage";
 
 function hashPassword(password: string) {
   return md5(password);

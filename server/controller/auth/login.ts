@@ -1,9 +1,9 @@
 import express from "express";
-import userExistsQuery from "../../../database/queries/userExistQuery";
-import responseCode from "../../../Exceptions/responseCode";
-import responseMessage from "../../../Exceptions/responseMessage";
-import signJWT from "../../../middlewares/jwt/sign";
-import User from "../../../types/users";
+import userExistsQuery from "database/queries/userExistQuery";
+import responseCode from "Exceptions/responseCode";
+import responseMessage from "Exceptions/responseMessage";
+import signJWT from "middlewares/jwt/sign";
+import User from "types/users";
 import md5 from "md5";
 
 export default async function LoginController(

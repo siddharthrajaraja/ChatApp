@@ -1,5 +1,5 @@
-import User from "../../types/users";
-import Users from "../model/Users";
+import User from "types/users";
+import Users from "database/model/Users";
 
 export default async function userExistsQuery(user: User) {
   const data = await Users.findOne({

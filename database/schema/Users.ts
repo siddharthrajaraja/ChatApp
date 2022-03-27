@@ -1,4 +1,5 @@
 import { DataTypes } from "sequelize";
+
 const UserSchema = {
   username: {
     type: DataTypes.STRING,
@@ -19,4 +20,5 @@ const UserSchema = {
     primaryKey: true,
   },
 };
+
 export default UserSchema;
