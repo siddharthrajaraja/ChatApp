@@ -1,6 +1,6 @@
 import { Response, Request, NextFunction } from "express";
-import responseCode from "Exceptions/responseCode";
-import responseMessage from "Exceptions/responseMessage";
+import responseCode from "exceptions/responseCode";
+import responseMessage from "exceptions/responseMessage";
 import userExistsQuery from "database/queries/userExistQuery";
 import User from "types/users";
 
