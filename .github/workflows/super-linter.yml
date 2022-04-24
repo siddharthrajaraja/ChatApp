@@ -28,6 +28,8 @@ jobs:
           DEFAULT_BRANCH: master
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TYPESCRIPT_DEFAULT_STYLE: prettier
+          VALIDATE_MARKDOWN: false
+          VALIDATE_TYPESCRIPT_STANDARD: false
 
       - name: npm install
         run: npm install
