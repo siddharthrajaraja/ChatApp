@@ -8,4 +8,5 @@ export = {
   NO_RECORDS_FOUND:
     "Sorry logged in details does not exist. Kindly Register 😄",
   PASSWORD_MISMATCH: "PASSWORD MISMATCH",
+  ERROR_LOADING_ENV_FILE: "ERROR WHILE LOADING .env",
 };
