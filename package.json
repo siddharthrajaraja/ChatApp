@@ -34,8 +34,12 @@
     "@types/node": "^16.11.4",
     "@types/validator": "^13.6.5",
     "ts-node": "^10.7.0",
+    "ts-standard": "^11.0.0",
     "tsc-watch": "^4.6.2",
     "tsconfig-paths": "^3.14.1",
     "typescript": "^4.4.3"
+  },
+  "ts-standard": {
+    "project": "./tsconfig.json"
   }
 }
