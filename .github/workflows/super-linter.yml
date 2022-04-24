@@ -27,6 +27,7 @@ jobs:
           VALIDATE_ALL_CODEBASE: true
           DEFAULT_BRANCH: master
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TYPESCRIPT_DEFAULT_STYLE: prettier
           VALIDATE_MARKDOWN: false
           VALIDATE_TYPESCRIPT_STANDARD: false
           VALIDATE_SQLFLUFF: false
