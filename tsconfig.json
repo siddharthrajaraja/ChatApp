@@ -10,5 +10,12 @@
     "experimentalDecorators": true,
     "baseUrl": "./"
   },
-  "include": ["server/*","auto/*","database/*","exceptions/*","middlewares/*","*"]
+  "include": [
+    "server/*",
+    "auto/*",
+    "database/*",
+    "exceptions/*",
+    "middlewares/*",
+    "*"
+  ]
 }

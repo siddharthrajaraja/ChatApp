@@ -1,8 +1,8 @@
 interface User {
-  username: string
-  password: string
-  email: string
-  mobile: string
+  username: string;
+  password: string;
+  email: string;
+  mobile: string;
 }
 
-export default User
+export default User;
