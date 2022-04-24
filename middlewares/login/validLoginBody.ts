@@ -1,14 +1,14 @@
-import { NextFunction, Request, Response } from "express";
-import User from "types/users";
-import responseCode from "exceptions/responseCode";
-import responseMessage from "exceptions/responseMessage";
+import { NextFunction, Request, Response } from 'express'
+import User from 'types/users'
+import responseCode from 'exceptions/responseCode'
+import responseMessage from 'exceptions/responseMessage'
 
-export default function validLoginBody(
+export default function validLoginBody (
   req: Request,
   res: Response,
   next: NextFunction
 ) {
-  const user: User = req.body;
+  const user: User = req.body
 
   try {
     if (
@@ -16,10 +16,10 @@ export default function validLoginBody(
       user.password === undefined ||
       user.mobile === undefined
     ) {
-      throw responseMessage.INVALID_BODY;
+      throw responseMessage.INVALID_BODY
     }
-    next();
+    next()
   } catch (error) {
-    return res.status(responseCode.INTERNAL_SERVER_ERROR).send(error);
+    return res.status(responseCode.INTERNAL_SERVER_ERROR).send(error)
   }
 }
