@@ -2,7 +2,7 @@ DROP DATABASE IF EXISTS chatapp;
 
 SELECT NULL as "I am in";
 
-CREATE DATABASE chatapp 
+CREATE DATABASE chatapp
     WITH
     OWNER = postgres
     ENCODING = 'UTF-8'

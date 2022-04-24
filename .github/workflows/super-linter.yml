@@ -29,7 +29,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VALIDATE_MARKDOWN: false
           VALIDATE_TYPESCRIPT_STANDARD: false
-          VALIDATE_SQL: false
           VALIDATE_SQLFLUFF: false
 
       - name: npm install
