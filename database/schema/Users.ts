@@ -1,24 +1,24 @@
-import { DataTypes } from "sequelize";
+import { DataTypes } from 'sequelize'
 
 const UserSchema = {
   username: {
     type: DataTypes.STRING,
-    allowNull: false,
+    allowNull: false
   },
   password: {
     type: DataTypes.STRING,
-    allowNull: false,
+    allowNull: false
   },
   mobile: {
     type: DataTypes.STRING,
     allowNull: false,
-    primaryKey: true,
+    primaryKey: true
   },
   email: {
     type: DataTypes.STRING,
     allowNull: false,
-    primaryKey: true,
-  },
-};
+    primaryKey: true
+  }
+}
 
-export default UserSchema;
+export default UserSchema

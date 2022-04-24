@@ -1,22 +1,21 @@
-import "reflect-metadata";
-import bodyParser from "body-parser";
-import express from "express";
-import { Express } from "express";
-import { gateway } from "server/gateway";
-import "database/config/dbConnections/psql.spec";
-import loadConfigs from "server/loadConfigs";
+import 'reflect-metadata'
+import bodyParser from 'body-parser'
+import express, { Express } from 'express'
+import { gateway } from 'server/gateway'
+import 'database/config/dbConnections/psql.spec'
+import loadConfigs from 'server/loadConfigs'
 
-const app = express();
-const jsonParser = bodyParser.json();
+const app = express()
+const jsonParser = bodyParser.json()
 
-app.use(jsonParser);
+app.use(jsonParser)
 
-gateway(app);
+gateway(app)
 
-async function listen(express_port: string, app: Express) {
+async function listen (express_port: string, app: Express) {
   await app.listen(express_port, () => {
-    console.log(`RUNNING EXPRESS SERVER AT : ${express_port}`);
-  });
+    console.log(`RUNNING EXPRESS SERVER AT : ${express_port}`)
+  })
 }
 
-listen(loadConfigs().EXPRESS_PORT, app);
+listen(loadConfigs().EXPRESS_PORT, app)

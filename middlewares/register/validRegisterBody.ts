@@ -1,13 +1,13 @@
-import { Response, Request, NextFunction } from "express";
-import md5 from "md5";
-import responseCode from "exceptions/responseCode";
-import responseMessage from "exceptions/responseMessage";
+import { Response, Request, NextFunction } from 'express'
+import md5 from 'md5'
+import responseCode from 'exceptions/responseCode'
+import responseMessage from 'exceptions/responseMessage'
 
-function hashPassword(password: string) {
-  return md5(password);
+function hashPassword (password: string) {
+  return md5(password)
 }
 
-export default function validRegisterBody(
+export default function validRegisterBody (
   req: Request,
   res: Response,
   next: NextFunction
@@ -19,11 +19,11 @@ export default function validRegisterBody(
       req.body.username === undefined ||
       req.body.mobile === undefined
     ) {
-      throw responseMessage.INVALID_BODY;
+      throw responseMessage.INVALID_BODY
     }
-    req.body.password = hashPassword(req.body.password);
-    next();
+    req.body.password = hashPassword(req.body.password)
+    next()
   } catch (error) {
-    return res.status(responseCode.INTERNAL_SERVER_ERROR).send(error);
+    return res.status(responseCode.INTERNAL_SERVER_ERROR).send(error)
   }
 }
