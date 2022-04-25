@@ -1,4 +1,7 @@
 interface ENV {
+  /**
+   * EXPRESS port where express server runs on machine
+   */
   EXPRESS_PORT: string;
   POSTGRES_USER: string;
   POSTGRES_PASSWORD: string;
