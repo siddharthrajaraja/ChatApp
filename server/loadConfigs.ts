@@ -3,6 +3,12 @@ import path from "path";
 import ENV from "types/env";
 import responseMessage from "exceptions/responseMessage";
 
+/**
+ * This function loads the .env file from root dir
+ * and created [[ENV]] variables to run the server
+ *
+ * @returns {@link ENV}
+ */
 export default function loadConfigs(): ENV {
   const config = dotenv.config({
     path: path.resolve(__dirname, "../.env"),
