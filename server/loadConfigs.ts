@@ -21,6 +21,8 @@ export default function loadConfigs(): ENV {
       POSTGRES_PASSWORD: config.POSTGRES_PASSWORD,
       POSTGRES_DB: config.POSTGRES_DB,
       JWT_SECRET: config.JWT_SECRET,
+      REDIS_HOST: config.REDIS_HOST,
+      REDIS_PORT: config.REDIS_PORT,
     };
   } else throw new Error(responseMessage.ERROR_LOADING_ENV_FILE);
 }
