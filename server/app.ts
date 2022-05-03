@@ -4,6 +4,7 @@ import express, { Express } from "express";
 import { gateway } from "server/gateway";
 import "database/config/dbConnections/psql.spec";
 import loadConfigs from "server/loadConfigs";
+import "cache/config/redis.spec";
 
 const app = express();
 const jsonParser = bodyParser.json();

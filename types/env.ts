@@ -19,6 +19,14 @@ interface ENV {
    * JWT secret required by the JWT Auth service
    */
   JWT_SECRET: string;
+  /**
+   * Port on which Redis server is hosted
+   */
+  REDIS_PORT: string;
+  /**
+   * Host of Redis server
+   */
+  REDIS_HOST: string;
 }
 
 export default ENV;
