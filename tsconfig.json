@@ -17,6 +17,8 @@
     "exceptions/*",
     "middlewares/*",
     "*",
-    "cache/*"
+    "cache/*",
+    "repository/*",
+    "services/*"
   ]
 }
