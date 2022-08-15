@@ -32,5 +32,6 @@ jobs:
           VALIDATE_TYPESCRIPT_STANDARD: true
           VALIDATE_SQLFLUFF: false
 
-      - name: npm install
-        run: npm install
+      # TODO: Uncomment later as this is not required for linting
+      #- name: npm install
+      #  run: npm install
