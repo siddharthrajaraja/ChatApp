@@ -1,12 +1,12 @@
 # ChatApp server 😄
 
-This is Express server backend of the ChatApp.
+This is Express server backend of the ChatApp. You can check the [System Design Doc][design_doc]
 
-<object data="https://github.com/siddharthrajaraja/ChatApp/blob/master/system%20design/ChatApp.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="https://github.com/siddharthrajaraja/ChatApp/blob/master/system%20design/ChatApp.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/siddharthrajaraja/ChatApp/blob/master/system%20design/ChatApp.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
+<embed src="/system_design/ChatApp.pdf" type="application/pdf">
+
+[embed] https://github.com/siddharthrajaraja/ChatApp/blob/master/system%20design/ChatApp.pdf [/embed]
+
+![Sample](/system_design/ChatApp.pdf)
 
 ## Documentation
 
