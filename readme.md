@@ -2,11 +2,7 @@
 
 This is Express server backend of the ChatApp. You can check the [System Design Doc][design_doc]
 
-<embed src="/system_design/ChatApp.pdf" type="application/pdf">
-
-[embed] https://github.com/siddharthrajaraja/ChatApp/blob/master/system%20design/ChatApp.pdf [/embed]
-
-![Sample](/system_design/ChatApp.pdf)
+<embed src="https://siddharthrajaraja.github.io/ChatApp/assets/system_design/ChatApp.pdf" type="application/pdf">
 
 ## Documentation
 
@@ -14,5 +10,6 @@ The server-side documentation is modularised and has `<route type>.md` naming co
 
 - [Check Connection][connection.md]
 
-[design_doc]: https://github.com/siddharthrajaraja/ChatApp/blob/master/system%20design/ChatApp.pdf
+[design_doc]: https://siddharthrajaraja.github.io/ChatApp/assets/system_design/ChatApp.pdf
+
 [connection.md]: https://github.com/siddharthrajaraja/ChatApp/blob/master/documentation/connection.md
